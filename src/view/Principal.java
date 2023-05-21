@@ -43,8 +43,8 @@ public class Principal {
 		//
 		try {
 			cc =car.Buscar(cc);
-			System.out.println(cc.toString());;
-			cc =car.remove(cc);
+			System.out.println(cc.toString());
+			System.out.println("Removido");
 			System.out.println(cc.toString());
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

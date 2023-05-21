@@ -26,27 +26,26 @@ public class CartãoApartamento {
 		int tam = l.size();
 		for ( int i =0; i<tam;i++) {
 			Carros c =(Carros)l.get(i);
-			if(c.getNpart().equals(npart.getNpart()))){
+			if(c.getNpart()==(npart.getNpart())){
 				return c;
 				}
 		}
 		return null;
 		}
 	
-	public Carros remove (Carros npart) {
+	public  void remove (Carros npart) throws Exception {
 		int pos = npart.hashCode();
 		Lista l = morador [pos];
 		int tam = l.size();
 		for ( int i =0; i<tam;i++) {
 			Carros c =(Carros)l.get(i);
-		//if(c.getNpart().equals(npart.getNpart())) {
+		if(c.getNpart() == npart.getNpart()) {
 			l.remove(i);
 			break;
 			
 		}
+	}
 }
-
-//}
 	public void lista(int napart) throws Exception {
 		int pos = hashCode();
 		Lista l = morador[pos];
